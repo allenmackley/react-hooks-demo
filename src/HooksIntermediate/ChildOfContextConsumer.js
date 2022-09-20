@@ -52,7 +52,9 @@ function ChildOfContextConsumer() {
     /**
      * We can handle setting the state inside of the reducer, by calling the dispatch function with an action type and a payload.
      * 
-     * Updating the state via the reducer helps prevent unexpected behavior because it acts as a single source of truth for each state change.
+     * Updating the state via the reducer helps prevent unexpected behavior because it acts as a single source of truth for each state change. 
+     * 
+     * Using named action constants is also helpful when using testing libraries or typescript.
      */
     const newColor = bgColor === LIGHT_BLUE ? DARK_GRAY : LIGHT_BLUE;
     dispatch({

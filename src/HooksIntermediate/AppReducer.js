@@ -3,11 +3,11 @@ export const ACTIONS = {
 };
 
 /**
- * The reducer takes a state object and an action object.
- * 
+ * The reducer takes a state object and an action object. 
  * The state object is similar to that used in setState()
- * 
  * The action object typically has a 'type' and a 'payload'
+ * 
+ * In a real-world app, these state modifications could become much more complex, such as iterating over an array and changing the state with .map() or .filter(), for example.
  */
 export function AppReducer(state, action) {
   switch(action.type) {
